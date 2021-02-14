@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "0f7093e4-997e-403c-925d-3e73322fea42",
+		"name": "Person JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA3NDI0LCJqdGkiOiJkMzYxZTA2NzQzMzg0YjJmODhhOWI0NmIxOWE4YWU0NyIsInVzZXJfaWQiOjF9.5kGeoS_IHlO-AX6xA7mEdgyDZ8R6__iT9TEEy2torcs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/person/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Viewsets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjEwODQ5LCJqdGkiOiI4NGMwNzI5MzQ2MGU0YjRjYWRmNWJiMjM3NTkyOThhNSIsInVzZXJfaWQiOjF9.4pIXtipkhD_ENroTfH0uNvM13P3v_8ckiJBvBMq_YYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA3NDI0LCJqdGkiOiJkMzYxZTA2NzQzMzg0YjJmODhhOWI0NmIxOWE4YWU0NyIsInVzZXJfaWQiOjF9.5kGeoS_IHlO-AX6xA7mEdgyDZ8R6__iT9TEEy2torcs",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/person/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA3NDI0LCJqdGkiOiJkMzYxZTA2NzQzMzg0YjJmODhhOWI0NmIxOWE4YWU0NyIsInVzZXJfaWQiOjF9.5kGeoS_IHlO-AX6xA7mEdgyDZ8R6__iT9TEEy2torcs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Abhishek\",\r\n    \"last_name\" : \"Sahu\",\r\n    \"email\"     : \"asahu2@gmail.com\",\r\n    \"phone\"     : \"9880907531\",\r\n    \"date_of_birth\": \"1993-11-13\" \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/person/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA3NDI0LCJqdGkiOiJkMzYxZTA2NzQzMzg0YjJmODhhOWI0NmIxOWE4YWU0NyIsInVzZXJfaWQiOjF9.5kGeoS_IHlO-AX6xA7mEdgyDZ8R6__iT9TEEy2torcs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/person/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"person",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"abhis\",\r\n    \"password\":\"namrata\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/gettoken/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"gettoken",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Verify Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA2NzQ3LCJqdGkiOiJiMTQ3MmU1ZjFiMDI0MTUzOGUyYzMwNWFjYmYwNWY1MiIsInVzZXJfaWQiOjF9.V79YVWthnxB86fQWCayL2f7o0nPNmRMd2Y6vcU9-WLw",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjEyNjA3NDI0LCJqdGkiOiJkMzYxZTA2NzQzMzg0YjJmODhhOWI0NmIxOWE4YWU0NyIsInVzZXJfaWQiOjF9.5kGeoS_IHlO-AX6xA7mEdgyDZ8R6__iT9TEEy2torcs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/verifytoken/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"verifytoken",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYxMjY5Mjg0NywianRpIjoiODE3ZTFiNDQ5MjE4NGUzNWI5NjkxODc5OThkNzAwNjMiLCJ1c2VyX2lkIjoxfQ.TWGK6hiLHW2jp8FxCsaJ0G8uVvLnZpPYyrnIlSUvDuk\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/refreshtoken/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"refreshtoken",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
